@@ -44,6 +44,7 @@ class ExtendedPagePosition extends ExtendedScrollPositionWithSingleContext
   Future<void> ensureVisible(
     RenderObject object, {
     double alignment = 0.0,
+    EdgeInsets padding = EdgeInsets.zero,
     Duration duration = Duration.zero,
     Curve curve = Curves.ease,
     ScrollPositionAlignmentPolicy alignmentPolicy =
@@ -57,6 +58,7 @@ class ExtendedPagePosition extends ExtendedScrollPositionWithSingleContext
     return super.ensureVisible(
       object,
       alignment: alignment,
+      padding: padding,
       duration: duration,
       curve: curve,
       alignmentPolicy: alignmentPolicy,
