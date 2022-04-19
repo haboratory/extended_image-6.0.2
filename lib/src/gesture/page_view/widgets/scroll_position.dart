@@ -58,7 +58,6 @@ class ExtendedPagePosition extends ExtendedScrollPositionWithSingleContext
     return super.ensureVisible(
       object,
       alignment: alignment,
-      padding: padding,
       duration: duration,
       curve: curve,
       alignmentPolicy: alignmentPolicy,
